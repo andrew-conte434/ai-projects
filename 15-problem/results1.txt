@@ -1,0 +1,5 @@
+2 0 1 6 3 5 4 7 8 9 10 11 14 15 12 13 
+Breadth-First Search:
+S W W S E E E N W S E S 
+Iterative Deepening Search:
+S W W S E E E N W S E S 
