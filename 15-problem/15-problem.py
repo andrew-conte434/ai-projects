@@ -52,7 +52,7 @@ def moveWest(board, index):
 solved = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0]
 
 def generateStart(board):
-    for i in range(50):
+    for i in range(5):
         index = board.index(0)
         move = random.randint(1, 4)
         if(move == 1):
@@ -183,11 +183,11 @@ def printResults(node):
 
 start = generateStart(solved)
 for i in start:
-    print(start[i], end=" ")
+    print(i, end=" ")
 print()
 print("Breadth-First Search:")
 bfs(start, solved)
-#print("Depth-First Search:")
-#dfs(start, solved)
+print("Depth-First Search:")
+dfs(start, solved)
 print("Iterative Deepening Search:")
 ids(start, solved)
